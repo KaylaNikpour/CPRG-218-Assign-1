@@ -1,5 +1,6 @@
-ul{
-display:flex;
-flex-wrap: wrap;
-justify-content: space-around;
+ul {
+    list-style-type:none;
+}
+li{
+    margin-bottom: 6%;
 }
