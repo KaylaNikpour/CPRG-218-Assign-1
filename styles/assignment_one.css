@@ -1,5 +1,6 @@
 
 /* Container specifics - Good for Mobile */
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -13,9 +14,9 @@
     text-align: flex-start;
     text-wrap: balance;
 }
+
 /*header */
 .header-container h1, h2{
-    margin-bottom:5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -24,9 +25,8 @@
 ul {
     list-style-type:none;
 }
-li{
-    margin: 4%;
-} 
+
+ 
 h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight:100;
@@ -48,8 +48,8 @@ p {
     .card-container {
     display: grid;
     grid-template-columns: repeat (2, 1fr);
+    column-gap: 30px;
 }
-
 .card:nth-last-child(1){
     width: 100%;
     grid-column: span 2;
@@ -61,5 +61,6 @@ p {
     .card-container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-}
+        column-gap: 30px;
+}   
 }
