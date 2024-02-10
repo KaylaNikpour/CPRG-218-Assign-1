@@ -1,23 +1,11 @@
-/*
-ul {
-    list-style-type:none;
-    padding: 3%;
-}
-li{
-    margin-bottom:5%;
-   
-} 
 
-*/
+/* Container specifics - Good for Mobile */
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-
-
-/*
 .card {
     width: unset;
     display: flex;
@@ -25,12 +13,20 @@ li{
     text-align: flex-start;
     text-wrap: balance;
 }
+/*header */
 .header-container h1, h2{
     margin-bottom:5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+/* Card Styles */
+ul {
+    list-style-type:none;
+}
+li{
+    margin: 4%;
+} 
 h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight:100;
@@ -43,24 +39,15 @@ h4 {
 }
 p {
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
-*/
 
-@media screen and (max-width: 780px){
-    .card-container{
-        justify-content: center;
-        gap: 10px;
-    }
-}
 /* tablet */
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     .card-container {
     display: grid;
     grid-template-columns: repeat (2, 1fr);
-    gap: 25px;
 }
 
 .card:nth-last-child(1){
@@ -69,11 +56,10 @@ p {
 }
 }
 
-
+/* Desktop */
 @media screen and (min-width: 1200px) {
     .card-container{
-        display:grid;
-        grid-template-columns: repeat (3, 1fr);
-        gap: 20px
-    }
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+}
 }
