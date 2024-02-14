@@ -2,7 +2,7 @@
 /* Container specifics - Also set for Mobile */
 
 .container {
-    max-width:none;
+    max-width: none;
 }
 .card-container {
     display: flex;
@@ -27,12 +27,12 @@
 
 /* Card Styles */
 ul {
-    list-style-type:none;
+    list-style-type: none;
 }
 
 h3 {
     font-family: Arial, Helvetica, sans-serif;
-    font-weight:100;
+    font-weight: 100;
     text-transform: uppercase;    
     color: grey;
 }
@@ -47,10 +47,10 @@ p {
 @media (width >=768px) {
     .card-container {
     display: grid;
-    grid-template-columns: repeat (2, 100%);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    padding-left:2%;
-    padding-right:2%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 .card:nth-last-child(1){
     width: 100%;
@@ -63,7 +63,7 @@ p {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;      
-        padding:0%;
+        padding: 0%;
         }
         .card:nth-last-child(1) {
             grid-column: auto;
