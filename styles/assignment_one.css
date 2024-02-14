@@ -63,6 +63,7 @@ p {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;      
+        padding:0%;
         }
         .card:nth-last-child(1) {
             grid-column: auto;
