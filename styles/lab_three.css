@@ -1,0 +1,15 @@
+.youtube {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom:30px;
+}
+
+/* Tablet */
+@media (width >=768px) {
+    .youtube > :first-child {
+    width:854px;
+    height:480px;
+    grid-column: span 2;
+    }
+}
