@@ -8,8 +8,15 @@
 /* Tablet */
 @media (width >=768px) {
     .youtube > :first-child {
-    width:854px;
-    height:480px;
-    grid-column: span 2;
+        display:grid;
+        width:854px;
+        height:480px;
+        grid-column: span 2;   
+}
+}
+@media (width >=1200px) {
+    .youtube > :first-child {
+    width: 100%;
     }
+
 }
