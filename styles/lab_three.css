@@ -1,22 +1,29 @@
-.youtube {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom:30px;
-}
 
-/* Tablet */
+/* main container info / mobile */
+
+.youtube {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 @media (width >=768px) {
-    .youtube > :first-child {
-        display:grid;
-        width:854px;
-        height:480px;
-        grid-column: span 2;   
+.youtube {
+    width: 96%;
 }
 }
 @media (width >=1200px) {
-    .youtube > :first-child {
+.youtube {
     width: 100%;
-    }
-
 }
+}
+
+
