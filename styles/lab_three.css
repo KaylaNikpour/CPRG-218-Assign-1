@@ -1,6 +1,5 @@
 
-/* main container info / mobile */
-
+/* Main container/ mobile */
 .youtube {
     position: relative;
     width: 100%;
@@ -15,11 +14,15 @@
     width: 100%;
     height: 100%;
 }
+
+/* Tablet */
 @media (width >=768px) {
 .youtube {
     width: 96%;
 }
 }
+
+/* Desktop */
 @media (width >=1200px) {
 .youtube {
     width: 100%;
